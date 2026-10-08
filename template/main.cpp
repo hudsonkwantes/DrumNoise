@@ -38,7 +38,7 @@ int main(void) {
         touch.Process();
 
         // Visual feedback: LED turns on when any pad is touched
-        hw.SetLed(touch.pads().HasTouch());
+        hw.SetLed(touch.pads().IsTouched(3));
 
         System::Delay(3);
     }
